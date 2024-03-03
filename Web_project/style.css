@@ -1,0 +1,168 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('images/bak.jpg'); /* Шлях до вашого зображення */
+  background-size: cover; /* Розмір зображення відповідатиме розміру контейнера */
+  background-position: center;
+  display: grid;
+  grid-template-columns: repeat(1 , 1fr);
+  align-items: center;
+  color: #fff; /* Колір тексту */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 1px solid #ccc;
+}
+nav ul {
+  color: var(--bg-color);
+  font-size: (--p-font);
+  font-weight: 500;
+  display: flex;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+body {
+  font-family: 'Playfair Display', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; 
+}
+
+p {
+  font-family: 'Georgia', serif;
+}
+
+
+.header {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+  
+}
+
+.main, .travel, footer {
+  background-color: #f9f9f9;
+  padding: 30px 0;
+  text-align: center;
+  background-image: url('images/bak.jpg'); /* Додайте посилання на зображення */
+  background-size: cover; /* Розмір фону буде змінюватися, щоб повністю покрити контейнер */
+  background-position: center; /* Центрування фонового зображення */
+  background-repeat: no-repeat; /* Заборона повторення фонового зображення */
+  background-attachment: fixed; /* Зробіть фонове зображення фіксованим */
+}
+@media screen and (max-width: 992px) {
+  .column {
+   width: 50%;
+   }
+  }
+  
+.articles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article {
+  width: 30%;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+article img {
+  width: 100%;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+article:hover img {
+  transform: scale(1.1);
+}
+
+article h3 {
+  margin: 10px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+article p {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.articles article {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.articles article img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.home-section {
+  height: 100vh; /* Висота рівна 100% висоті вікна браузера */
+  background-image: url('images/bak.jpg'); /* Фото фону */
+  background-size: cover; /* Розмір фону буде залежати від розміру контейнера */
+  background-position: center; /* Центруємо фон */
+  color: #000000; /* Колір тексту на фоні */
+  display: flex; /* Встановлюємо flex-контейнер для центрування вмісту */
+  justify-content: center; /* Горизонтальне центрування вмісту */
+  align-items: center; /* Вертикальне центрування вмісту */
+  text-align: center; /* Вирівнюємо текст по центру */
+}
+footer {
+  background-color: #333;
+  color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    text-align: left;
+  }
+}
+
